@@ -20,7 +20,7 @@ from keras.optimizers import SGD
 
 IM_WIDTH, IM_HEIGHT = 224, 224
 NB_EPOCHS = 1
-BAT_SIZE = 32
+BAT_SIZE = 24 #change batch size
 
 
 def get_images(paths):
