@@ -113,7 +113,6 @@ def add_new_last_layer(base_model, nb_classes):
 
 
 def setup_to_transfer_learn(model, base_model):
-    """Freeze all layers and compile the model"""
     for layer in base_model.layers:
         layer.trainable = False
     model.compile(
